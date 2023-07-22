@@ -1,3 +1,5 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 :root{
 	--mainColor:#eaeaea;
 	--secondaryColor:#fff;
@@ -18,7 +20,7 @@
 
 html, body {
     padding: 0px;
-    margin: 0px;
+    margin: 10px;
     scroll-behavior: smooth;
     width: 90%;
     max-height: auto;
@@ -95,7 +97,7 @@ img {
     min-width: 60%;
     margin: auto;
     margin-left: 180px;
-    margin-top: -623px;
+    margin-top: -523px;
     background-color: var(--bg);
     gap: 10px 10px; 
     padding: 20px;          
