@@ -71,7 +71,11 @@ img {
     max-height: 100%;
 }
 
-
+header {
+    width: 10%;
+    max-width: 1240px;
+    margin: 0 auto;
+  }
 
 .blog {
     background-color: var(--borderColor);
