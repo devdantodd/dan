@@ -9,6 +9,9 @@
 
 	--bg:#24292e;
 
+    --post1: #586e80;
+    --post2: #606365;
+
 	--previewBg:rgb(251, 249, 243, 0.8);
 	--previewShadow:#f0ead6;
 
@@ -66,11 +69,22 @@ img {
     max-height: 100%;
 }
 
-header {
-    width: 10%;
-    max-width: 1240px;
-    margin: 0 auto;
-  }
+.header {
+    max-width: 130px;
+    margin: auto;   
+    background-color: var(--borderColor);
+    border-bottom: 1px solid var(--borderColor);
+     
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
+    
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #c1c1c1;
+
+}
 
 .main-container {
     display: flex; 
@@ -83,12 +97,10 @@ header {
 }
 
 .nav-wrapper {
-    display: flex; 
-    flex-direction: column;
     background-color: var(--secondaryText);
-    width: 170px;
-    position: relative;
-    padding: 10px;
+    max-width: 170px;
+    margin-left: 350px;
+    
     -webkit-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.75);
     box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.75); 
@@ -116,13 +128,9 @@ header {
 }
 
 .profile_pic {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    margin: 5px;
-    margin-top: 2px;
-    min-height: 150px;
-    width: 150px;   
+    padding: 10px;
+    margin: 0px;
+
     -webkit-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.75);
     box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.75); 
@@ -134,10 +142,17 @@ header {
 }
 
 .blog {
-    background-color: var(--borderColor);
+    background-color: ;
+    border-bottom: ;
+    padding: 0px;
+    margin-top: -550px;      
+    
+}
+.post1 {
+    background-color: var(--post1);
     border-bottom: 1px solid var(--borderColor);
-    padding: 10px;
-    margin-top: 0px;    
+    padding: 5px;
+    margin: 10px;    
      
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -147,7 +162,36 @@ header {
     -moz-border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
     border: 0px solid #c1c1c1;
+}
+.post2 {
+    background-color: var(--post2);
+    border-bottom: 1px solid var(--borderColor);
+    padding: 5px;
+    margin: 10px;
+     
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
     
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #c1c1c1;
+}
+.post3 {
+    background-color: yellow;
+    border-bottom: 1px solid var(--borderColor);
+    padding: 5px;
+    margin: 10px;
+     
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
+    
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #c1c1c1;
 }
 
 footer {
@@ -161,7 +205,7 @@ footer {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .main-container {
         width: 100%;
     }    
