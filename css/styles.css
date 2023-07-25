@@ -88,11 +88,9 @@ img {
 
 .main-container {
     display: flex; 
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
     max-width: 800px;
     margin: auto;    
-    gap: 10px 10px; 
     padding: 20px;    
 }
 
@@ -205,7 +203,7 @@ footer {
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     .nav-wrapper {
         width: 100%;
     }
