@@ -21,23 +21,31 @@
 
 html, body {
     scroll-behavior: smooth;
-    background-color: var(--bg);
-       
+    background: ;   
 }
-
 body *{
     transition: 0.3s;
-
+}
+canvas
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index:-1;
 }
 
 h1, h2, h3, h4, h5, h6, strong {
     color: var(--mainText);
-    font-family: 'Russo One', sans-serif;
+    font-family: 'Handjet', cursive;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
 
 p, li, span, label, input, textarea {
     color: var(--mainText);
+    font-family: 'Handjet', cursive;
     font-family: 'Roboto', sans-serif;
     padding: 2px;
     word-wrap: break-word;
@@ -70,10 +78,14 @@ img {
 }
 
 .header {
-    max-width: 130px;
-    margin: auto;   
+    max-width: 150px;
+    margin: auto;
+    text-align: center;    
     background-color: var(--borderColor);
     border-bottom: 1px solid var(--borderColor);
+    font-family: 'Handjet', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
      
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -95,7 +107,8 @@ img {
 }
 
 .nav-wrapper {
-    background-color: var(--secondaryText);
+    background-color: black;
+    
     max-width: 170px;
     margin-left: 350px;
     
@@ -197,15 +210,22 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: var(--secondaryText);
+  background-color: ;
   color: white;
   text-align: center;
 }
 
 
 @media screen and (max-width: 600px) {
-    html {
-        width: 100%;
+    .nav-wrapper {
+        width: 50%;
+    }
+
+    .main-container {
+        width: 50%;
+    }    
+    body {
+        width: 50%;
     }
 }
 
