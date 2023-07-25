@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@400;700&family=Roboto&display=swap');
+
 :root{
 	--mainColor:#eaeaea;
 	--secondaryColor:#fff;
@@ -21,7 +23,6 @@
 
 html, body {
     scroll-behavior: smooth;
-    background: ;   
 }
 body *{
     transition: 0.3s;
@@ -78,8 +79,7 @@ img {
 }
 
 .header {
-    max-width: 150px;
-    
+    max-width: 500px;    
     margin: auto;
     text-align: center;    
     background-color: var(--borderColor);
@@ -102,11 +102,10 @@ img {
 
 .main-container {
     display: flex; 
-    flex-direction: column;
-    
-    max-width: 800px;
-    margin: auto;    
-    padding: 20px;    
+    flex-direction: row;    
+    margin: 10px;    
+    padding: 10px; 
+      
 }
 
 .nav-wrapper {
@@ -158,9 +157,11 @@ img {
 
 .blog {
     background-color:var(--bg) ;
+    width: 800px;
     border-bottom: ;
     padding: 5px;
-    margin-top: -550px;
+    margin: 20px;
+    margin-top: 0px;
     text-align: center;    
     
     border-radius: 10px 10px 10px 10px;
@@ -227,7 +228,7 @@ footer {
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 00px) {
     :root {
         /* Adjust any CSS variables here if necessary */
     }
