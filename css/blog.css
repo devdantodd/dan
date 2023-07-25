@@ -1,83 +1,24 @@
-:root{
-	--mainColor:#eaeaea;
-	--secondaryColor:#fff;
-
-	--borderColor:#c1c1c1;
-
-	--mainText:black;
-	--secondaryText:#4b5156;
-
-	--bg:#24292e;
-
-	--previewBg:rgb(251, 249, 243, 0.8);
-	--previewShadow:#f0ead6;
-
-
-	--buttonColor:black;
+html {
+  background: #f5f7f8;
+  font-family: system-ui;
+  -webkit-font-smoothing: antialiased;
+  padding: 20px 0;
 }
 
-html, body {
-    padding: 0px;
-    margin: 10px;
-    scroll-behavior: smooth;
-    width: 90%;
-    max-height: auto;
-    background-color: var(--bg);
-    
-}
-
-body *{
-    transition: 0.3s;
-}
-
-h1, h2, h3, h4, h5, h6, strong {
-    color: var(--mainText);
-    font-family: 'Russo One', sans-serif;
-    font-weight: 500;
-}
-
-p, li, span, label, input, textarea {
-    color: var(--mainText);
-    font-family: 'Roboto', sans-serif;
-    padding: 2px;
-    word-wrap: break-word;
-}
-
-a {
-    text-decoration: none;
-    color: var(--secondaryColor)
-}
-a:hover {
-    color: var(--borderColor);
-    text-decoration: underline;
-}
-
-ul {
-    list-style: none;
-    padding: 10px;
-}
-
-h1 {font-size: 56px};
-h2 {font-size: 36px};
-h3 {font-size: 28px};
-h4 {font-size: 24px};
-h5 {font-size: 20px};
-h6 {font-size: 16px};
-
-img {
-    max-width: 100%;
-    max-height: 100%;
+header {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
 }
 
 .band {
   width: 90%;
   max-width: 1240px;
-  margin-left: 200px;
-  margin-top: -150px;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-gap: 10px;
+  grid-gap: 20px;
 }
 @media (min-width: 30em) {
   .band {

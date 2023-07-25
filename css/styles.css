@@ -17,17 +17,14 @@
 }
 
 html, body {
-    padding: 0px;
-    margin: 10px;
     scroll-behavior: smooth;
-    width: 90%;
-    max-height: auto;
     background-color: var(--bg);
        
 }
 
 body *{
     transition: 0.3s;
+
 }
 
 h1, h2, h3, h4, h5, h6, strong {
@@ -75,36 +72,14 @@ header {
     margin: 0 auto;
   }
 
-.blog {
-    background-color: var(--borderColor);
-    border-bottom: 1px solid var(--borderColor);
-    padding: 10px;
-    margin-top: -40px;    
-     
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
-    
-    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    border: 0px solid #c1c1c1;
-    
-}
-
 .main-container {
     display: flex; 
-    flex-direction: column;
-    width: 50%;  
-    min-width: 60%;
-    margin: auto;
-    margin-left: 180px;
-    margin-top: -523px;
-    background-color: var(--bg);
+    flex-direction: row;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;    
     gap: 10px 10px; 
-    padding: 20px;          
-
-    
+    padding: 20px;    
 }
 
 .nav-wrapper {
@@ -156,6 +131,23 @@ header {
     -moz-border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
     border: 0px solid #c1c1c1;
+}
+
+.blog {
+    background-color: var(--borderColor);
+    border-bottom: 1px solid var(--borderColor);
+    padding: 10px;
+    margin-top: 0px;    
+     
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
+    
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #c1c1c1;
+    
 }
 
 footer {
