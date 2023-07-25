@@ -203,8 +203,8 @@ footer {
 }
 
 
-@media screen and (max-width: 786px) {   
-    body {
+@media screen and (max-width: 600px) {
+    html {
         width: 100%;
     }
 }
