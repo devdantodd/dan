@@ -79,7 +79,7 @@ img {
 
 .header {
     max-width: 150px;
-    position: relative;
+    
     margin: auto;
     text-align: center;    
     background-color: var(--borderColor);
@@ -103,7 +103,7 @@ img {
 .main-container {
     display: flex; 
     flex-direction: column;
-    position: relative;
+    
     max-width: 800px;
     margin: auto;    
     padding: 20px;    
@@ -114,7 +114,7 @@ img {
     opacity: 0.9;
     max-width: 170px;
     margin-left: 350px;
-    position: relative;
+    
 
     -webkit-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.75);
@@ -227,7 +227,7 @@ footer {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
     :root {
         /* Adjust any CSS variables here if necessary */
     }
