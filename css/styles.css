@@ -228,11 +228,37 @@ footer {
 
 
 @media screen and (max-width: 600px) {
-    .nav-wrapper {
-       width: 10%;
-    }  
-    .blog {
-        width: 90%;
+    :root {
+        /* Adjust any CSS variables here if necessary */
     }
+
+    .nav-wrapper {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .blog {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    /* Add any additional styles for mobile devices here */
 }
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    :root {
+        /* Adjust any CSS variables here if necessary */
+    }
+
+    /* Add any specific styles for tablets and small desktops here */
+}
+@media screen and (min-width: 1025px) {
+    :root {
+        /* Adjust any CSS variables here if necessary */
+    }
+
+    /* Add any specific styles for larger desktops and laptops here */
+}
+
+
 
