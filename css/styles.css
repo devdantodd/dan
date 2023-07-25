@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6, strong {
     color: var(--mainText);
     font-family: 'Handjet', cursive;
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: 500px;
 }
 
 p, li, span, label, input, textarea {
@@ -86,6 +86,7 @@ img {
     font-family: 'Handjet', cursive;
     font-family: 'Roboto', sans-serif;
     font-size: 60px;
+    opacity: 0.9;
      
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
@@ -107,11 +108,11 @@ img {
 }
 
 .nav-wrapper {
-    background-color: black;
-    
+    background-color: var(--bg);
+    opacity: 0.9;
     max-width: 170px;
     margin-left: 350px;
-    
+
     -webkit-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.75);
     box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.75); 
@@ -153,10 +154,16 @@ img {
 }
 
 .blog {
-    background-color: ;
+    background-color:var(--bg) ;
     border-bottom: ;
-    padding: 0px;
-    margin-top: -550px;      
+    padding: 5px;
+    margin-top: -550px;
+    text-align: center;    
+    
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #c1c1c1;
     
 }
 .post1 {
@@ -164,7 +171,8 @@ img {
     border-bottom: 1px solid var(--borderColor);
     padding: 5px;
     margin: 10px;    
-     
+    text-align: left;
+
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
