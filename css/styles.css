@@ -205,14 +205,14 @@ footer {
 
 @media screen and (max-width: 800px) {
     .nav-wrapper {
-        width: 100%;
+        min-width: 100%;
     }
 
     .main-container {
-        width: 100%;
+        min-width: 100%;
     }    
     body {
-        width: 100%;
+        min-width: 100%;
     }
 }
 
