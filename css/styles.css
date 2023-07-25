@@ -161,9 +161,9 @@ footer {
 }
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 600px) {
     .main-container {
-        width: 60%;
+        width: 100%;
     }    
     body {
         width: 100%;
