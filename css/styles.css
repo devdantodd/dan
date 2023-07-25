@@ -26,14 +26,14 @@ html, body {
 body *{
     transition: 0.3s;
 }
-canvas
-{
-  position: absolute;
+canvas {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index:-1;
+  
 }
 
 h1, h2, h3, h4, h5, h6, strong {
