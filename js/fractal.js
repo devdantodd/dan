@@ -16,13 +16,13 @@
     var eraser = 0.03;
     var eraserSize = H / 25;
     var eraserOffset = [-W/2, H/6];
-    var ringSize = 150;
+    var ringSize = 50;
     var count = 0;
-    var clearpoint = 2000;
+    var clearpoint = 5000;
   
     var temp = null;
     var oldPoint = null;
-    var hue = Math.random() * 360; 
+    var hue = Math.random() * 720; 
   
     var playing = true;
   
@@ -76,7 +76,7 @@
     {
       var delta = e.pageY / window.innerHeight;
   
-      rotationAmp = 0.2 + (delta / 3);
+      rotationAmp = 1 + (delta / 3);
     }
   
     function loop()

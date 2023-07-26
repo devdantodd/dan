@@ -157,67 +157,31 @@ img {
     border: 0px solid #c1c1c1;
 }
 
-.blog {
-    background-color:var(--bg) ;
-    width: 800px;
-    border-bottom: ;
-    padding: 5px;
-    margin: 20px;
-    margin-top: 0px;
-    text-align: center;    
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
     
-    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    border: 0px solid #c1c1c1;
-    
-}
-.post1 {
-    background-color: var(--post1);
-    border-bottom: 1px solid var(--borderColor);
-    padding: 5px;
-    margin: 10px;    
-    text-align: left;
+  }
+ 
+  .blog-post {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--bg);
+    width: 600px;
 
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
-    
-    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    border: 0px solid #c1c1c1;
-}
-.post2 {
-    background-color: var(--post2);
-    border-bottom: 1px solid var(--borderColor);
-    padding: 5px;
-    margin: 10px;
-     
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
-    
-    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    border: 0px solid #c1c1c1;
-}
-.post3 {
-    background-color: yellow;
-    border-bottom: 1px solid var(--borderColor);
-    padding: 5px;
-    margin: 10px;
-     
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
-    
-    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    border: 0px solid #c1c1c1;
-}
+  }
+  
+  aside {
+    width: 10%;
+    background-color: var(--bg);
+    padding: 1rem;
+  }
+  
+  
 
 footer {
   position: fixed;
