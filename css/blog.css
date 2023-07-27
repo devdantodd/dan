@@ -158,12 +158,20 @@ img {
 }
 
 main {
-    flex: 1;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 1rem;
-    
+    flex-direction: space-around;
+    padding: 10px;
+    margin: 0;
+
+    -webkit-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.75);
+    box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.75); 
+
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #c1c1c1;
+   
   }
  
   .blog-post {
@@ -172,6 +180,12 @@ main {
     width: 100%;
     background-color: var(--bg);
     width: 600px;
+    padding: 10px;
+
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #c1c1c1;
 
   }
   
@@ -179,6 +193,11 @@ main {
     width: 10%;
     background-color: var(--bg);
     padding: 1rem;
+
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #c1c1c1;
   }
   
   
@@ -194,38 +213,54 @@ footer {
 }
 
 
-@media screen and (max-width: 00px) {
-    :root {
-        /* Adjust any CSS variables here if necessary */
-    }
-
+/* Mobile Devices */
+@media screen and (max-width: 600px) {
     .nav-wrapper {
         width: 100%;
         margin-left: 0;
     }
 
-    .blog {
+    .blog-post {
         width: 100%;
-        margin-top: 0;
     }
 
     /* Add any additional styles for mobile devices here */
 }
 
+/* Tablets and Small Desktops */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-    :root {
-        /* Adjust any CSS variables here if necessary */
+    .main-container {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .nav-wrapper {
+        max-width: 100%;
+    }
+
+    .blog-post {
+        max-width: 800px; /* Adjust the maximum width for tablet view */
     }
 
     /* Add any specific styles for tablets and small desktops here */
 }
+
+/* Larger Desktops and Laptops */
 @media screen and (min-width: 1025px) {
-    :root {
-        /* Adjust any CSS variables here if necessary */
+    .main-container {
+        /* You can keep the default styles or adjust as needed */
+    }
+
+    .nav-wrapper {
+        /* You can keep the default styles or adjust as needed */
+    }
+
+    .blog-post {
+        /* You can keep the default styles or adjust as needed */
     }
 
     /* Add any specific styles for larger desktops and laptops here */
 }
+
 
 
 
