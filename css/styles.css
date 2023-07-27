@@ -101,22 +101,10 @@ img {
 
 }
 
-.main-container {
-    display: flex; 
-    flex-grow: ; 
-    justify-content: center;      
-    margin: 10px;    
-    padding: 10px; 
-    
-      
-}
-
 .nav-wrapper {
     background-color: var(--bg);
     opacity: 0.9;
-    max-width: 170px;
-    margin-left: 0px;
-    
+    max-width: 170px;    
 
     -webkit-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.75);
@@ -158,14 +146,27 @@ img {
     border: 0px solid #c1c1c1;
 }
 
-.blog {
+.main-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px;
+    margin: auto;
+    margin-top: 15px;
+    width: 50%;    
+    background-color: rgba(36, 41, 46, 0.9);   
+
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #c1c1c1;          
+}
+
+.content {
     background-color:var(--bg) ;
-    width: 800px;
-    border-bottom: ;
-    padding: 5px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
     margin-top: 0px;
-    text-align: center;    
+    
 
     border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
@@ -177,42 +178,13 @@ img {
     box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.75); 
 }
 .post1 {
-    background-color: var(--post1);
+    background-color: var(--mainColor);
     border-bottom: 1px solid var(--borderColor);
     padding: 5px;
     margin: 10px;    
-    text-align: left;
+    text-align: center;
+    align-content: center;
 
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
-    
-    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    border: 0px solid #c1c1c1;
-}
-.post2 {
-    background-color: var(--post2);
-    border-bottom: 1px solid var(--borderColor);
-    padding: 5px;
-    margin: 10px;
-     
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
-    
-    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    border: 0px solid #c1c1c1;
-}
-.post3 {
-    background-color: yellow;
-    border-bottom: 1px solid var(--borderColor);
-    padding: 5px;
-    margin: 10px;
-     
     -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
