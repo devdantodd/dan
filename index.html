@@ -2,70 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
+    <title>Login</title>
+
     <canvas id="canvas"></canvas>
 
     <script src="/js/connectingdots.js"></script>
-   
-
-  
-
-
-    
-  <title>Dan Todd</title>
 </head>
 <body>
 
+    <form>
+        <label for="pswd">How old is Daniel Todd?</label>
+        <input type="text" id="pswd">
+        <input type="button" value="Submit" onclick="checkPswd();" />
+      </form>
 
-
-<div class="header">Hello</div>
-
-
-<div class="main-container">
-  
-  <div class="nav-wrapper">
-    <div class="navigation">
-      <div class="profile_pic">
-        <img src="imgs/me2.jpg" alt="avatar" style="max-width: 100%;max-height: 100%">
-        <h3><a href="https://twitter.com/devdantodd">@devdantodd</a></h3>
-        <p>I am Dan Todd, the creator of worlds.</p>
-      </div>
-  
-      <ul>           
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/blog.html">Blog</a></li>
-        <li><a href="#">Music</a></li>
-        <li><a href="#">Art</a></li>
-        <li><a href="https://github.com/devdantodd?tab=repositories">Projects</a></li>
-        <li><a href="/games.html">Games</a></li>   
-        <li><a href="/fractal.html">Fractal</a></li> 
-      </ul>
-    </div>
-  </div>
-   
-  <div class="blog">
-    <h3></h3>
-      <div class="post1">
-          <h3>Welcome to my person website</h3>
-          <img src="https://thumbs.gfycat.com/AnyFilthyEmeraldtreeskink-max-1mb.gif" style="max-width: 20%;max-height: 20%">
-          <p>Here you'll find everything I'm interested in and working on. This is currently a WIP but feel free to look around.</p>
-      </div>
-
-      
-      
-        
-      </div>
-        
-        
-  </div>    
-</div>
-
-
-    <footer>
-    Copyright ©
-    </footer>
-
-    </body>
-    </html>
+      <script type="text/javascript">
+        function checkPswd() {
+          var confirmPassword = "32";
+          var password = document.getElementById("pswd").value;
+          if (password === confirmPassword) {
+            window.location.href = "welcome.html";
+          } else {
+            alert("Passwords do not match.");
+          }
+        }
+      </script>
+</body>
+</html>
