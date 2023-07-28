@@ -3,6 +3,7 @@
 :root{
 	--mainColor:#eaeaea;
 	--secondaryColor:#fff;
+    --blogpostsColor: #aeafaf;
 
 	--borderColor:#c1c1c1;
 
@@ -101,14 +102,6 @@ img {
 
 }
 
-.main-container {
-    display: flex; 
-    flex-grow: ; 
-    justify-content: center;      
-    margin: 10px;    
-    padding: 10px; 
-      
-}
 
 .nav-wrapper {
     background-color: var(--bg);
@@ -157,42 +150,70 @@ img {
     border: 0px solid #c1c1c1;
 }
 
-main {
+.main-container {
     display: flex;
-    flex-direction: space-around;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px;
+    margin: auto;
+    margin-top: 15px;
+    width: 50%;    
+    background-color: rgba(36, 41, 46, 0.9);   
+
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #c1c1c1;          
+}
+
+.content {
+    background-color:var(--bg) ;
     padding: 10px;
-    margin: 0;
+    margin: 10px;
+    margin-top: 0px;
+    
+
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 0px solid #c1c1c1;
 
     -webkit-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.75);
     box-shadow: -1px 1px 23px 3px rgba(0,0,0,0.75); 
-
-    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    border: 0px solid #c1c1c1;
    
   }
  
-  .blog-post {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: var(--bg);
-    width: 600px;
-    padding: 10px;
+  .post {
+    background-color: var(--blogpostsColor);
+    border-bottom: 1px solid var(--borderColor);
+    padding: 5px;
+    margin: 10px;    
+    text-align: center;
+    align-content: center;
 
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
+    
     border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
     -webkit-border-radius: 10px 10px 10px 10px;
     border: 0px solid #c1c1c1;
+}
 
-  }
+
   
   aside {
-    width: 10%;
-    background-color: var(--bg);
+    background-color: var(--blogpostsColor);
+    border-bottom: 1px solid var(--borderColor);
     padding: 1rem;
+    width: 100%;
+
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75); 
 
     border-radius: 10px 10px 10px 10px;
     -moz-border-radius: 10px 10px 10px 10px;
@@ -213,6 +234,8 @@ footer {
 }
 
 
+/* Add your global styles here */
+
 /* Mobile Devices */
 @media screen and (max-width: 600px) {
     .nav-wrapper {
@@ -220,8 +243,12 @@ footer {
         margin-left: 0;
     }
 
+    .main-container {
+        flex-direction: column;
+    }
+
     .blog-post {
-        width: 100%;
+        max-width: 100%;
     }
 
     /* Add any additional styles for mobile devices here */
@@ -229,8 +256,8 @@ footer {
 
 /* Tablets and Small Desktops */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-    .contant {
-        flex-direction: column; /* Stack elements vertically */
+    .main-container {
+        flex-direction: column;
     }
 
     .nav-wrapper {
@@ -260,6 +287,7 @@ footer {
 
     /* Add any specific styles for larger desktops and laptops here */
 }
+
 
 
 

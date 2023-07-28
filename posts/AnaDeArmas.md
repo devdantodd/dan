@@ -1,1 +1,0 @@
-<h3>Why Ana De Armas is one of the best actresses of our time</h3>
